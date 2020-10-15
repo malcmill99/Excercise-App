@@ -6,14 +6,12 @@
       <p class="title">Bench Press Station</p>
     <!--  <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
     </a>
-
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
-
   <div class="home">
     <img alt="Vue logo" src="../assets/fitness.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -29,8 +27,6 @@
 
   <div id="navbarBasicExample" class="navbar-menu "  :class="{ 'is-active': isActive }">
     <div class="navbar-start">
-      <router-link to="/"  class="navbar-item" >Home</router-link>
-      <router-link to="/about"  class="navbar-item" >About</router-link>
       <router-link to="/feed"  class="navbar-item" >Feed</router-link>
 
       <div class="navbar-item has-dropdown is-hoverable">
@@ -39,9 +35,6 @@
         </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
-          </a>
           <a class="navbar-item">
             Jobs
           </a>
