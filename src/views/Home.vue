@@ -79,6 +79,12 @@
           </div>
         </div>
 
+        <div class="field">
+          <label class="label">Location (Optional)</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input" />
+          </div>
+        </div>
 
         <div class="field">
           <div class="control">
