@@ -3,12 +3,10 @@
 <div class="level section">
 
 <div class="level-item">
-
-
     <form>
         <div class="field">
         <p class="control has-icons-left has-icons-right">
-            <input class="input" type="email" placeholder="Email">
+            <input v-model="email" class="input" type="email" placeholder="Email">
             <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
             </span>
@@ -19,7 +17,7 @@
         </div>
         <div class="field">
         <p class="control has-icons-left">
-            <input class="input" type="password" placeholder="Password">
+            <input v-model="password" class="input" type="password" placeholder="Password">
             <span class="icon is-small is-left">
             <i class="fas fa-lock"></i>
             </span>
@@ -27,7 +25,7 @@
         </div>
         <div class="field">
         <p class="control">
-            <button class="button is-success">
+            <button @click="login" class="button is-success">
             Login
             </button>
         </p>
@@ -37,22 +35,30 @@
 </div>
 </template>
 
-<!--<script>
-import session from "@/store/session";
+<script>
+import * as api from "@/Controller/Api";
+
 export default {
-    methods: {
-        login(){
-            session.user = {
-                name: 'Malcolm Miller',
-                handle: 'Tiggy9000',
-    
-            }
-            session.addNotification('Yay! You logged in', 'success')
-            this.$router.push('feed')
-        }
+  data(){
+    return {
+    password : '',
+    email : ''
     }
+  },
+  methods: {
+    login: function () {
+      api.login(this.email, this.password).then(function (response) {
+        //return response;
+        if (response.data) {
+          alert("logged in");
+        } else {
+          alert("user not found");
+        }
+      });
+    },
+  }
 }
-</script> -->
+</script>
 
 <style>
     
