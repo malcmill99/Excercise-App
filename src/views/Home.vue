@@ -96,10 +96,25 @@
 </template>
 
 <script>
+
+//import * as api from "@/Controller/Api";
+
 export default {
   name: "Home",
   components: {
     
-  }
+  },
+  //methods: {
+    //Exercise_Types: function () {
+      //api.login(this.sets, this.reps).then(function (response) {
+        //return response;
+        //if (response.data) {
+          //alert("# of sets was inputed");
+        //} else {
+          //alert("error");
+        //}
+      //});
+    //},
+  //}
 };
 </script>
