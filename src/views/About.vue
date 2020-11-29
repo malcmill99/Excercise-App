@@ -9,7 +9,7 @@
     <p>
       This app is supposed to let users log in, input 
       an exercise, and share that information with 
-      their friends!
+      their friends! 
     </p>
     </div>
     <div>
@@ -17,7 +17,7 @@
       This app will help people to keep track of what
       workouts they are doing, where they are doing them,
       how long they are working out for, and some more 
-      information.
+      information. 
     </p>
     </div>
   </div>
