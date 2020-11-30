@@ -12,10 +12,12 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
+  <!--
   <div class="home">
     <img alt="Vue logo" src="../assets/fitness.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>  
+  -->
 
 <!--<nav class="navbar container is-fixed-top is-info" role="navigation" aria-label="main navigation">-->
   <div class="navbar-brand">
